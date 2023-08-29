@@ -5,7 +5,7 @@ const {
   getProduct,
   createProduct,
   updateProduct,
-  deleteProduct
+  deleteProduct,
 } = require("./controllers/productController");
 
 const app = http.createServer((req, res) => {
@@ -36,6 +36,8 @@ const app = http.createServer((req, res) => {
     res.end(JSON.stringify({ message: "No route found." }));
   }
 });
+
+console.log("My first change");
 
 const port = process.env.PORT || 3000;
 
