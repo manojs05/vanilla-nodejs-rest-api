@@ -37,7 +37,6 @@ const app = http.createServer((req, res) => {
   }
 });
 
-console.log("My first change");
 
 const port = process.env.PORT || 3000;
 
